@@ -1,14 +1,22 @@
 ---
 name: "agentic-knowledge"
 displayName: "Agentic Knowledge"
-description: "Dynamic architectural guidance for building agentic AI systems using current AWS prescriptive guidance and patterns"
+description: "Architectural guidance for building agentic AI systems using AWS prescriptive guidance and patterns"
 keywords: ["agentic ai",  "agentic architecture", "agent patterns", "agentic workflows", "aws architecture", "multi-agent systems",  "autonomous systems",  "intelligent agents", "prescriptive guidance", "architectural patterns"]
-author: "Robert Bradley"
+author: "AWS"
 ---
 
 # Agentic Knowledge Power
 
-This power provides dynamic architectural guidance for building agentic AI systems on AWS. Rather than static documentation, it leverages MCP servers to access current AWS prescriptive guidance and combines it with intelligent steering to provide contextual, up-to-date architectural recommendations.
+This power provides architectural guidance for building agentic AI systems on AWS. It leverages MCP servers to access AWS prescriptive guidance and combines it with intelligent steering to provide contextual architectural recommendations.
+
+## Prerequisites
+
+Before using this power, ensure you have:
+- **AWS Account**: Access to AWS services for implementation
+- **AWS Credentials**: Properly configured AWS credentials if deploying resources
+- **Internet Connection**: Required for MCP server communication
+- **Python/uv**: Required for running MCP servers (uvx command)
 
 ## MCP Servers:
   - strands-agents
@@ -93,15 +101,15 @@ Organizations implementing agentic AI systems typically see measurable improveme
 ## How This Power Works
 
 This power combines:
-- **AWS Prescriptive Guidance Priority**: Always starts with official AWS foundational documents on agentic AI
-- **Live Documentation Access**: Real-time retrieval of current guidance through MCP servers
-- **Grounded Recommendations**: All architectural advice is based on official AWS prescriptive guidance
+- **AWS Prescriptive Guidance Priority**: Starts with official AWS foundational documents on agentic AI
+- **Documentation Access**: Retrieval of AWS guidance through MCP servers
+- **Grounded Recommendations**: Architectural advice based on official AWS prescriptive guidance
 - **Modern Implementation**: Combines AWS best practices with current frameworks (Strands, AgentCore)
 
 ## Core Capabilities
 
 ### 🔍 **AWS Prescriptive Guidance Foundation**
-Always starts with official AWS prescriptive guidance documents:
+Starts with official AWS prescriptive guidance documents:
 - **Foundations of agentic AI on AWS** - Core principles and architectural foundations
 - **Agentic AI patterns and workflows on AWS** - Specific implementation patterns
 - **Agentic AI frameworks, protocols, and tools on AWS** - Framework selection guidance
@@ -128,7 +136,7 @@ Receive practical guidance on:
 
 ---
 
-*This power leverages MCP servers to ensure you always have access to the most current AWS prescriptive guidance and architectural patterns for agentic AI systems.*
+*This power leverages MCP servers to access AWS prescriptive guidance and architectural patterns for agentic AI systems.*
 
 ## Getting Started
 
@@ -328,3 +336,35 @@ Through interactive dialogue and iterative refinement:
 - Implement efficient memory and context management
 - Use appropriate AWS regions for your users
 - Optimize tool and API integrations
+
+---
+
+## License Information
+
+This power integrates with the following MCP servers:
+
+- **strands-agents-mcp-server**: Apache-2.0 License
+- **amazon-bedrock-agentcore-mcp-server**: Apache-2.0 License  
+- **AWS Knowledge MCP Server**: Proprietary AWS service
+
+For complete license details, refer to each MCP server's repository or documentation.
+
+## Telemetry and Privacy
+
+**Telemetry Collection**: This power does not collect or transmit telemetry data. However, the integrated MCP servers may collect usage data according to their respective privacy policies:
+
+- **AWS Knowledge MCP Server**: Subject to AWS Privacy Notice and service terms
+- **Strands and AgentCore MCP Servers**: May collect usage metrics as documented in their respective repositories
+
+**Data Handling**: When using this power:
+- Architectural queries and responses are processed through MCP servers
+- No user data is stored by the power itself
+- AWS service usage follows standard AWS data handling practices
+- Review individual MCP server privacy policies for specific data handling details
+
+**Disabling Telemetry**: To disable telemetry collection:
+- For AWS services: Configure according to AWS service documentation
+- For third-party MCP servers: Refer to their respective documentation for opt-out procedures
+- MCP server connections can be disabled in the mcp.json configuration file
+
+For questions about data handling or privacy, consult the AWS Privacy Notice at https://aws.amazon.com/privacy/ and individual MCP server documentation.
